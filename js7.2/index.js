@@ -6,6 +6,7 @@ function over ( event ) {
 }
 function out ( event ) {
     event.target.style.backgroundColor = '#ff00ff50';
+    event.stopPropagation();
 }
 function clickHandler ( event ) {
     event.target.remove();
